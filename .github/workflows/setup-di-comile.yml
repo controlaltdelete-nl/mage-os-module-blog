@@ -12,9 +12,9 @@ jobs:
       - uses: mage-os/github-actions/setup-magento@main
         with:
           php-version: 8.4
-          tools: composer:v2
           mode: extension
-          magento_version: 2.4.8
+          magento_version: 2.4.8-p3
+          magento_repository: "https://repo.mage-os.org/"
 
       - run: composer config repositories.local path $GITHUB_WORKSPACE
         name: Add Github Repo for Testing
