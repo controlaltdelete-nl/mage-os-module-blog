@@ -21,7 +21,7 @@ jobs:
         working-directory: ${{ steps.setup-magento.outputs.path }}
         shell: bash
 
-      - run: Run setup:di:compile
+      - name: Run setup:di:compile
         uses: mage-os/github-actions/setup-di-compile@main
         with:
           php_version: "8.4"
