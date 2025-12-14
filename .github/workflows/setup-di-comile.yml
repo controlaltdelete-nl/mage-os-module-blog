@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: mage-os/github-actions/setup-magento
+      - uses: mage-os/github-actions/setup-magento@main
         with:
           php-version: 8.4
           tools: composer:v2
